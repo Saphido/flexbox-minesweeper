@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'minecraftmedium';
+    src: url('../font/minecraft-webfont.woff2') format('woff2'),
+         url('../font/minecraft-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.minesweeper {
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: #c0c0c0;
+    width: 512px;
+    height: 512px;
+    border-style: inset;
+    border-color: #c2c2c2;
+    border-width: 16px;
+    
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 518px;
+    max-height: 518px;
+    
+}
+
+.square {
+    width: 64px;
+    height: 64px;
+}
+
+#discovered {
+    border-style: none dotted dotted none;
+    border-width: 5px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+#discovered:hover {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+#undiscovered {
+    border-style: none solid solid none;
+    border-width: 3px;
+    box-sizing: border-box;
+    border-color: black;
+}
+
+#undiscovered:hover .case-one-u{
+    font-size: 50px;
+}
+#undiscovered:hover .case-two-u{
+    font-size: 50px;
+}
+#undiscovered:hover .case-three-u{
+    font-size: 50px;
+}
+#undiscovered:hover img{
+    width: 80%;
+}
+
+.case-one {
+    font-family: 'minecraftmedium';
+    font-size: 40px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    color: blue;
+}
+
+.case-two {
+    font-family: 'minecraftmedium';
+    font-size: 40px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    color: green;
+}
+
+.case-three{
+    font-family: 'minecraftmedium';
+    font-size: 40px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    color: red;
+}
+
+.case-bomb {
+    width: 80%;
+}
+
+#undiscovered .case-one-u {
+    font-family: 'minecraftmedium';
+    font-size: 0px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    color: blue;
+}
+
+.case-two-u {
+    font-family: 'minecraftmedium';
+    font-size: 0px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    color: green;
+}
+
+.case-three-u{
+    font-family: 'minecraftmedium';
+    font-size: 0px;
+    position: relative;
+    top: 4px;
+    left: 3px;
+    color: red;
+}
+
+.case-bomb-u {
+    width: 0%;
+}
